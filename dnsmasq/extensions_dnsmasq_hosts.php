@@ -226,11 +226,11 @@ include("fbegin.inc");
 				</tr>
 				<tr><td>
 					<div id="submit">
-					<input name="Submit" type="submit" class="formbtn" value="<?=gettext("Save");?>" />
+					<input name="Submit" type="submit" class="formbtn" value="Save" />
 					<input name="hostno" type="hidden" value="<?=$pconfig['hostno'];?>" />
 					<input name="mode" type="hidden" value="<?=$pconfig['mode'];?>" />
 					<input name="uuid" type="hidden" value="<?=$pconfig['uuid'];?>" />
-					<input name="Submit" type="submit" class="formbtn" value="<?=gettext("Cancel");?>" />
+					<input name="Submit" type="submit" class="formbtn" value="Cancel" />
 					</div>
 				    </td>
 				</tr>

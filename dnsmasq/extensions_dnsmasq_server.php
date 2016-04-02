@@ -10,7 +10,7 @@ include_once ($config['dnsmasq']['rootfolder']."dnsmasq/function.inc");
 if (!isset($config['dnsmasq']) || !is_array($config['dnsmasq'])) header("Location: extensions_dnsmasq_conf.php");
 if (is_file("/var/run/dnsmasq.reload")) $warnmess = file_get_contents("/var/run/dnsmasq.reload");
 if ($_POST) {
-	if (isset($_POST['Submit']) && ($_POST['Submit'] === "Save")) {  $pconfig = $_POST;
+	if (isset($_POST['Submit']) && !empty($_POST['Submit'])) {  $pconfig = $_POST;
 		unset($input_errors);
 		if (isset($_POST['enable'])) { 	$config['dnsmasq']['enable'] = TRUE; } else { unset($config['dnsmasq']['enable']); }
 			

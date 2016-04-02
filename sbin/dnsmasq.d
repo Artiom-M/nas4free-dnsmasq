@@ -133,17 +133,17 @@ case ${_logging} in
 			
 			;;
 esac
-xml sel -t \
+/usr/local/bin/xml sel -t \
 	-i "count(//dnsmasq/extconfig) > 0" -o "conf-dir=" -v "//dnsmasq/rootfolder" -o "conf" -n -b \
 	${configxml_file} | /usr/local/bin/xml unesc >> ${dnsmasq_conf}
-xml sel -t \
+/usr/local/bin/xml sel -t \
 	-i "string-length(//dnsmasq/tftpboot) > 3" -o "dhcp-boot=" -v "//dnsmasq/tftpboot" -n -b \
 	${configxml_file} | /usr/local/bin/xml unesc >> ${dnsmasq_conf}
-xml sel -t \
+/usr/local/bin/xml sel -t \
 	-i "count(//dnsmasq/enabletftp) > 0" -o "enable-tftp" -n -b \
 	${configxml_file} | /usr/local/bin/xml unesc >> ${dnsmasq_conf}
 
-xml sel -t \
+/usr/local/bin/xml sel -t \
 	-i "string-length(//dnsmasq/tftproot) > 3" -o "tftp-root=" -v "//dnsmasq/tftproot" -n -b \
 	${configxml_file} | /usr/local/bin/xml unesc >> ${dnsmasq_conf}
 

@@ -148,7 +148,7 @@ else if ($savemsg) { print_info_box($savemsg); }
 	
 			<tr><td width="22%" valign="top" class="vncell">&nbsp;Current status</td>
 			<td width="78%" class="vtable" >The latest version on GitHub is: <?=$gitversion[1];?><br />Your version is: <?=$localversion[1];?><br />
-	<input name="txtCommand" type="hidden" value="<?="sh /tmp/dnsmasq_install.sh";?>" />
+	<input name="txtCommand" type="hidden" value="<?="sh /tmp/dnsmasq_install.sh &";?>" />
 			 	<input name="Submit" type="submit" class="formbtn" value="Update">
 			</td>
 		</tr>
