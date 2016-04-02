@@ -111,8 +111,8 @@ foreach ($a_hosts as $host):?>
 									<?php if (UPDATENOTIFY_MODE_DIRTY != $notificationmode):?>
 											
 									<td valign="middle" nowrap="nowrap" class="list">
-										<a href="extensions_dnsmasq_hosts.php?act=edit&amp;uuid=<?=$host['uuid'];?>"><img src="e.gif" title="<?=gettext("Edit host");?>" border="0" alt="<?=gettext("Edit host");?>" /></a>&nbsp;
-										<a href="extensions_dnsmasq_hosts.php?act=del&amp;uuid=<?=$host['uuid'];?>" onclick="return confirm('<?=gettext("Do you really want to delete this entry?");?>')"><img src="x.gif" title="<?=gettext("Delete host");?>" border="0" alt="<?=gettext("Delete host");?>" /></a>
+										<a href="extensions_dnsmasq_hosts.php?act=edit&amp;uuid=<?=$host['uuid'];?>"><img src="edit.png" title="<?=gettext("Edit host");?>" border="0" alt="<?=gettext("Edit host");?>" /></a>&nbsp;
+										<a href="extensions_dnsmasq_hosts.php?act=del&amp;uuid=<?=$host['uuid'];?>" onclick="return confirm('<?=gettext("Do you really want to delete this entry?");?>')"><img src="delete.png" title="<?=gettext("Delete host");?>" border="0" alt="<?=gettext("Delete host");?>" /></a>
 										</td>	
 									<?php else:?>									
 								</tr>
@@ -121,7 +121,7 @@ foreach ($a_hosts as $host):?>
 								<tr>
 									<td class="list" colspan="8"></td>
 									<td class="list">
-										<a href="extensions_dnsmasq_hosts.php?act=new"><img src="plus.gif" title="<?=gettext("Add host");?>" border="0" alt="<?=gettext("Add host");?>" /></a>
+										<a href="extensions_dnsmasq_hosts.php?act=new"><img src="add.png" title="<?=gettext("Add host");?>" border="0" alt="<?=gettext("Add host");?>" /></a>
 									</td>
 
 								</tr>
